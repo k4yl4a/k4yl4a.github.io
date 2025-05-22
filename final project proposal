@@ -1,0 +1,27 @@
+kayla's random outfit generator
+
+The final product would be a website where users interact by pressing the spacebar, and a randomized 'outfit' is generated. 
+The clothing would all be from my closet, and there would be 4 elements to the outfit: top, bottom, shoe, and accessory. 
+Consider this project as a reflection of my personal style, clothes that I've curated through my life, and while not everything will "go together," they have all been chosen by me. 
+
+Steps:
+1. build site (new git repository? + html/javascript i think)
+2. get images ready for input (crop in photoshop, transparent background, GIMP)
+3. work on data model/filenames (clothing categorized by top, bottom, shoe, accessory)
+4. trial and error, experiment with layout
+5. maybe add extra elements? more categories of clothing, list whether I bought the item new or thrifted it
+
+Tools: github, html, photoshop, maybe p5.js
+
+Project Documentation: digital journal, probably on Notion
+
+Concept:
+My clothing style is something personal to me, it tells me who I am and what I value. It's a reflection of me in ways I wouldn't typically consider. 
+For some background, once I hit puberty and became more involved on social media, I wanted to buy a lot of new and different clothes. 
+It was like I was Eve after eating the apple realizing she was naked. But I was 13 and had no job so my main hobby became thrifting clothes. 
+And it was such a high finding good cute clothing for 'cheap' at GoodWill, Salvation Army, Plato's closet, garage sales, Crossroads, etc. 
+A large percentage of my clothing is second-hand, which is important to me because I am well aware of the fashion industry's environmental impacts 
+and don't want to further contribute.
+
+I've come a long way in my personal style and I think it would be quite the personal experience to go through my own pieces of clothing
+and create a program that presents my style to me in a randomized way. I can document my feelings and thoughts through the process to add as a description to the site as well. 
