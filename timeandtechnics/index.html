@@ -19,8 +19,7 @@
     }
 
     .emphasized {
-      font-weight: bold;
-      color: red;
+      color: blue;
       font-size: 1.5em;
     }
 
@@ -38,30 +37,31 @@
     <p id="line1"></p>
     <p id="line2">Round like a circle in a spiral,</p>
     <p id="line3">like a wheel within a wheel</p>
-    <p id="line4">Never ending or beginning on an ever spinning reel</p>
+    <p id="line4">Never ending or beginning on an ever spinning reel </p>
     <p id="line5">Like a snowball down a mountain, or a carnival balloon</p>
     <p id="line6">Like a carousel that's turning running rings around the moon</p>
-    <p id="line7">And the world is like an apple whirling silently in space</p>
-    <p id="line8">Like the circles that you find in the windmills of your mind</p>
-    <p id="line9">Like a tunnel that you follow to a tunnel of its own</p>
-    <p id="line10">Down a hollow to a cavern where the sun has never shone</p>
-    <p id="line11">Like a door that keeps revolving in a half forgotten dream</p>
-    <p id="line12">Or the ripples from a pebble someone tosses in a stream</p>
-    <p id="line13">Like a clock whose hands are sweeping past the minutes of its face</p>
-    <p id="line14">And the world is like an apple whirling silently in space</p>
-    <p id="line15">Like the circles that you find in the windmills of your mind</p>
-    <p id="line16">Keys that jingle in your pocket, words that jangle in your head</p>
-    <p id="line17">Why did summer go so quickly, was it something that you said?</p>
-    <p id="line18">Lovers walk along a shore and leave their footprints in the sand</p>
-    <p id="line19">Is the sound of distant drumming just the fingers of your hand?</p>
-    <p id="line20">Pictures hanging in a hallway and the fragment of a song</p>
-    <p id="line21">Half remembered names and faces, but to whom do they belong?</p>
-    <p id="line22">When you knew that it was over you were suddenly aware</p>
-    <p id="line23">That the autumn leaves were turning to the color of her hair!</p>
-    <p id="line24">Like a circle in a spiral, like a wheel within a wheel</p>
-    <p id="line25">Never ending or beginning on an ever spinning reel</p>
-    <p id="line26">As the images unwind, like the circles that you find</p>
-    <p id="line27">In the windmills of your mind!</p>
+    <p id="line7">Like a clock whose hands are sweeping past the minutes of its face</p>
+    <p id="line8">And the world is like an apple whirling silently in space</p>
+    <p id="line9">Like the circles that you find in the windmills of your mind</p>
+    <p id="line10">Like a tunnel that you follow to a tunnel of its own</p>
+    <p id="line11">Down a hollow to a cavern where the sun has never shone</p>
+    <p id="line12">Like a door that keeps revolving in a half forgotten dream</p>
+    <p id="line13">Or the ripples from a pebble someone tosses in a stream</p>
+    <p id="line14">Like a clock whose hands are sweeping past the minutes of its face</p>
+    <p id="line15">And the world is like an apple whirling silently in space</p>
+    <p id="line16">Like the circles that you find in the windmills of your mind</p>
+    <p id="line17">Keys that jingle in your pocket, words that jangle in your head</p>
+    <p id="line18">Why did summer go so quickly, was it something that you said?</p>
+    <p id="line19">Lovers walk along a shore and leave their footprints in the sand</p>
+    <p id="line20">Is the sound of distant drumming just the fingers of your hand?</p>
+    <p id="line21">Pictures hanging in a hallway and the fragment of a song</p>
+    <p id="line22">Half remembered names and faces, but to whom do they belong?</p>
+    <p id="line23">When you knew that it was over you were suddenly aware</p>
+    <p id="line24">That the autumn leaves were turning to the color of her hair!</p>
+    <p id="line25">Like a circle in a spiral, like a wheel within a wheel</p>
+    <p id="line26">Never ending or beginning on an ever spinning reel</p>
+    <p id="line27">As the images unwind, like the circles that you find</p>
+    <p id="line28">In the windmills of your mind!</p>
   </div>
 
   <script src="https://www.youtube.com/iframe_api"></script>
@@ -69,32 +69,35 @@
   <script>
     let player;
     const timings = [
-      [27.0, 29.0],     // line 1
-      [29.1, 31.0],     // line 2
-      [31.1, 34.5],     // line 3
-      [34.6, 37.5],     // line 4
-      [37.6, 41.5],     // line 5
-      [41.6, 45.2],     // line 6
-      [45.3, 49.5],     // line 7
-      [49.6, 52.5],     // line 8
-      [52.6, 55.5],     // line 9
-      [55.6, 59.0],     // line 10
-      [59.1, 62.5],     // line 11
-      [62.6, 66.0],     // line 12
-      [66.1, 70.0],     // line 13
-      [70.1, 73.5],     // line 14
-      [73.6, 76.5],     // line 15
-      [76.6, 79.5],     // line 16
-      [79.6, 83.0],     // line 17
-      [83.1, 86.5],     // line 18
-      [86.6, 89.0],     // line 19
-      [89.1, 91.5],     // line 20
-      [91.6, 94.5],     // line 21
-      [94.6, 97.5],     // line 22
-      [97.6, 100.5],    // line 23
-      [100.6, 103.5],   // line 24
-      [103.6, 106.0],   // line 25
-      [106.1, 109.0]    // line 26
+      [0, 0],     // line 1
+      [6.0, 7.5],     // line 2
+      [8.0, 10.0],     // line 3
+      [10.1, 13.0],     // line 4
+      [13.5, 17.9],     // line 5
+      [18.5, 21.5],     // line 6
+      [22.5, 26.0],     // line 7
+      [26.5, 30.0],     // line 8
+      [30.5, 35.0],     // line 9
+      [35.3, 40.0],     // line 10
+      [40.0, 44.0],     // line 11
+      [44.0, 48.0],     // line 12
+      [48.5, 52.0],     // line 13
+      [52.5, 56.0],     // line 14
+      [56.8, 60.0],     // line 15
+      [60.5, 65.5],     // line 16
+      [65.7, 69.0],    // line 17
+      [69.5, 74.0],   // line 18
+      [74.5, 78.5],   // line 19
+      [78.6, 82.2]    // line 20
+      [82.2, 86.2]    //line 21
+      [86.4, 90.0]    //line 22
+      [90.9, 95.0]    //line 23
+      [95.5, 101.0]    //line 24
+      [102.0, 104.0]    //line 25
+      [104.5, 106.0]    //line 26
+      [106.5, 120.0]    //line 27
+      [120.5, 126.0]    //line 28
+      [126.5, 140]      //line 29
     ];
 
     const lines = Array.from(document.querySelectorAll("#speech p"));
