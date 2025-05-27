@@ -67,66 +67,71 @@
   <script src="https://www.youtube.com/iframe_api"></script>
 
   <script>
-    let player;
-    const timings = [
-      [0, 0],     // line 1
-      [6.0, 7.5],     // line 2
-      [8.0, 10.0],     // line 3
-      [10.1, 13.0],     // line 4
-      [13.5, 17.9],     // line 5
-      [18.5, 21.5],     // line 6
-      [22.5, 26.0],     // line 7
-      [26.5, 30.0],     // line 8
-      [30.5, 35.0],     // line 9
-      [35.3, 40.0],     // line 10
-      [40.0, 44.0],     // line 11
-      [44.0, 48.0],     // line 12
-      [48.5, 52.0],     // line 13
-      [52.5, 56.0],     // line 14
-      [56.8, 60.0],     // line 15
-      [60.5, 65.5],     // line 16
-      [65.7, 69.0],    // line 17
-      [69.5, 74.0],   // line 18
-      [74.5, 78.5],   // line 19
-      [78.6, 82.2]    // line 20
-      [82.2, 86.2]    //line 21
-      [86.4, 90.0]    //line 22
-      [90.9, 95.0]    //line 23
-      [95.5, 101.0]    //line 24
-      [102.0, 104.0]    //line 25
-      [104.5, 106.0]    //line 26
-      [106.5, 120.0]    //line 27
-      [120.5, 126.0]    //line 28
-      [126.5, 140]      //line 29
-    ];
+  let player;
 
-    const lines = Array.from(document.querySelectorAll("#speech p"));
+  const timings = [
+    [0, 0],     // line 1
+    [6.0, 7.5],     // line 2
+    [8.0, 10.0],     // line 3
+    [10.1, 13.0],     // line 4
+    [13.5, 17.9],     // line 5
+    [18.5, 21.5],     // line 6
+    [22.5, 26.0],     // line 7
+    [26.5, 30.0],     // line 8
+    [30.5, 35.0],     // line 9
+    [35.3, 40.0],     // line 10
+    [40.0, 44.0],     // line 11
+    [44.0, 48.0],     // line 12
+    [48.5, 52.0],     // line 13
+    [52.5, 56.0],     // line 14
+    [56.8, 60.0],     // line 15
+    [60.5, 65.5],     // line 16
+    [65.7, 69.0],     // line 17
+    [69.5, 74.0],     // line 18
+    [74.5, 78.5],     // line 19
+    [78.6, 82.2],     // line 20
+    [82.2, 86.2],     // line 21
+    [86.4, 90.0],     // line 22
+    [90.9, 95.0],     // line 23
+    [95.5, 101.0],    // line 24
+    [102.0, 104.0],   // line 25
+    [104.5, 106.0],   // line 26
+    [106.5, 120.0],   // line 27
+    [120.5, 126.0],   // line 28
+    [126.5, 140.0]    // line 29
+  ];
 
-    function onYouTubeIframeAPIReady() {
-      player = new YT.Player("player", {
-        height: "400",
-        width: "600",
-        videoId: "WEhS9Y9HYjU", 
-        events: {
-          onReady: onPlayerReady
+  const lines = Array.from(document.querySelectorAll("#speech p"));
+
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player("player", {
+      height: "400",
+      width: "600",
+      videoId: "WEhS9Y9HYjU",
+      events: {
+        onReady: onPlayerReady
+      }
+    });
+  }
+
+  function onPlayerReady() {
+    setInterval(() => {
+      const current = player.getCurrentTime();
+      lines.forEach((line, i) => {
+        const [start, end] = timings[i] || [0, 0];
+        if (current >= start && current < end) {
+          if (!line.classList.contains("emphasized")) {
+            line.classList.add("emphasized");
+            line.scrollIntoView({ behavior: "smooth", block: "center" });
+          }
+        } else {
+          line.classList.remove("emphasized");
         }
       });
-    }
+    }, 200);
+  }
+</script>
 
-    function onPlayerReady() {
-      setInterval(() => {
-        const current = player.getCurrentTime();
-        lines.forEach((line, i) => {
-          const [start, end] = timings[i] || [0, 0];
-          if (current >= start && current < end) {
-            line.classList.add("emphasized");
-          } else {
-            line.classList.remove("emphasized");
-          }
-        });
-      }, 200); 
-    }
-  </script>
 
 </body>
 </html>
