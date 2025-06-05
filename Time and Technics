@@ -44,37 +44,37 @@
     <p id="line9">Like a tunnel that you follow to a tunnel of its own</p>
     <p id="line10">Down a hallow to a cavern where the sun has never shone</p>
     <p id="line11">Like a door that keeps revolving in a half forgetten dream</p>
-    <p id="line12">For you, our children, our brothers and sisters.</p>
-    <p id="line13">And for the vast and wonderful world that gave us life,</p>
-    <p id="line14">and keeps us guessing.</p>
-    <p id="line15">Endless affection,</p>
-    <p id="line16">mia Sofia.</p>
-    <p id="line17">Forever yours,</p>
-    <p id="line18">Ezio Auditore.</p>
+    <p id="line12">Or the ripples from a pebble someone tosses in a stream</p>
+    <p id="line13">Like a clock whose hands are sweeping past the minutes of its face</p>
+    <p id="line14">And the world is like an apple whirling silently in space</p>
+    <p id="line15">Like the circles that you find in the windmills of your mind</p>
+    <p id="line16">Keys that jingle in your pocket, words that jangle in your head</p>
+    <p id="line17">Why did summer go so quickly, was it something that you said?</p>
+    <p id="line18">Lovers walka along a shore and leave their footprints in the sand</p>
   </div>
   <script>
     const video = document.querySelector("video");
     const lines = Array.from(document.querySelectorAll("#speech p"));
 
     const timings = [
-      [27.0, 29],       // "When I was a young man,"
-      [30, 33],         // "I had liberty, but I did not see it."
-      [34, 37],         // "I had time, but I did not know it."
-      [38, 41.5],       // "And I had love, but I did not feel it."
-      [42.5, 47.5],     // "Many decades would pass before I understood the meaning of all three."
-      [48, 51],         // "And now, the twilight of my life,"
-      [52.3, 55.5],     // "this understanding has passed into contentment."
-      [56.5, 60.2],     // "Love, liberty, and time:"
-      [61, 63.2],       // "once so disposable,"
-      [63.2, 66.3],     // "are the fuels that drive me forward."
-      [67.3, 71.2],     // "And love, most especially, mio caro."
-      [71.8, 77],       // "For you, our children, our brothers and sisters."
-      [77.6, 82],       // "And for the vast and wonderful world that gave us life,"
-      [82.4, 84.4],     // "and keeps us guessing."
-      [85.3, 87.2],     // "Endless affection,"
-      [87.4, 89.2],     // "mia Sofia."
-      [89.5, 91.1],     // "Forever yours,"
-      [92, 95]          // "Ezio Auditore."
+      [27.0, 29],       
+      [30, 33],        
+      [34, 37],         
+      [38, 41.5],      
+      [42.5, 47.5],     
+      [48, 51],         
+      [52.3, 55.5],     
+      [56.5, 60.2],     
+      [61, 63.2],       
+      [63.2, 66.3],   
+      [67.3, 71.2],     
+      [71.8, 77],       
+      [77.6, 82],       
+      [82.4, 84.4],      
+      [85.3, 87.2],      
+      [87.4, 89.2],    
+      [89.5, 91.1],    
+      [92, 95]          
     ];
 
     video.addEventListener("timeupdate", () => {
