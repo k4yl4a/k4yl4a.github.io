@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>title</title>
+  <style>
+    body {
+      background-color: black;
+      color: whitesmoke;
+      font-family: monospace;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    p {
+      transition: all 0.3s ease;
+    }
+
+    .emphasized {
+      font-weight: bold;
+      color: red;
+      font-size: 1.5em;
+    }
+
+    video {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+<iframe width="600" height="400" src="https://www.youtube.com/embed/watch?v=WEhS9Y9HYjU" frameborder="0" allowfullscreen></iframe>
+  <div id="speech">
+    <p id="line1"></p>
+    <p id="line2">Round like a cicle in a spiral,</p>
+    <p id="line3">like a wheel within a wheel</p>
+    <p id="line4">Never ending or beginning on an ever spinning reel</p>
+    <p id="line5">Like a snowball down a mountain, or a carnival balloon</p>
+    <p id="line6">Like a carousel that's turning running rings around the moon</p>
+    <p id="line7">And the world is like an apple whirling silently in space</p>
+    <p id="line8">Like the circles that you find in the windmills of your mind</p>
+    <p id="line9">Like a tunnel that you follow to a tunnel of its own</p>
+    <p id="line10">Down a hallow to a cavern where the sun has never shone</p>
+    <p id="line11">Like a door that keeps revolving in a half forgetten dream</p>
+    <p id="line12">For you, our children, our brothers and sisters.</p>
+    <p id="line13">And for the vast and wonderful world that gave us life,</p>
+    <p id="line14">and keeps us guessing.</p>
+    <p id="line15">Endless affection,</p>
+    <p id="line16">mia Sofia.</p>
+    <p id="line17">Forever yours,</p>
+    <p id="line18">Ezio Auditore.</p>
+  </div>
+  <script>
+    const video = document.querySelector("video");
+    const lines = Array.from(document.querySelectorAll("#speech p"));
+
+    const timings = [
+      [27.0, 29],       // "When I was a young man,"
+      [30, 33],         // "I had liberty, but I did not see it."
+      [34, 37],         // "I had time, but I did not know it."
+      [38, 41.5],       // "And I had love, but I did not feel it."
+      [42.5, 47.5],     // "Many decades would pass before I understood the meaning of all three."
+      [48, 51],         // "And now, the twilight of my life,"
+      [52.3, 55.5],     // "this understanding has passed into contentment."
+      [56.5, 60.2],     // "Love, liberty, and time:"
+      [61, 63.2],       // "once so disposable,"
+      [63.2, 66.3],     // "are the fuels that drive me forward."
+      [67.3, 71.2],     // "And love, most especially, mio caro."
+      [71.8, 77],       // "For you, our children, our brothers and sisters."
+      [77.6, 82],       // "And for the vast and wonderful world that gave us life,"
+      [82.4, 84.4],     // "and keeps us guessing."
+      [85.3, 87.2],     // "Endless affection,"
+      [87.4, 89.2],     // "mia Sofia."
+      [89.5, 91.1],     // "Forever yours,"
+      [92, 95]          // "Ezio Auditore."
+    ];
+
+    video.addEventListener("timeupdate", () => {
+      const current = video.currentTime;
+      lines.forEach((line, i) => {
+        const [start, end] = timings[i];
+        if (current >= start && current < end) {
+          line.classList.add("emphasized");
+        } else {
+          line.classList.remove("emphasized");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
