@@ -1,6 +1,16 @@
 const tops = [
   'images/tops/top1.png',
   'images/tops/top2.png',
+  'images/tops/top3.png',
+  'images/tops/top4.png',
+  'images/tops/top5.png',
+  'images/tops/top6.png',
+  'images/tops/top7.png',
+  'images/tops/top8.png',
+  'images/tops/top9.png',
+  'images/tops/top10.png',
+  'images/tops/top11.png',
+  'images/tops/top12.png',
 ];
 
 const bottoms = [
