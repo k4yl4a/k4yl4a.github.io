@@ -41,11 +41,20 @@ const bottoms = [
 const shoes = [
   'images/shoes/shoe1.png',
   'images/shoes/shoe2.png',
+  'images/shoes/shoe3.png',
+  'images/shoes/shoe4.png',
 ];
 
 const accessories = [
   'images/accessories/acc1.png',
   'images/accessories/acc2.png',
+  'images/accessories/acc3.png',
+  'images/accessories/acc4.png',
+  'images/accessories/acc5.png',
+  'images/accessories/acc6.png',
+  'images/accessories/acc7.png',
+  'images/accessories/acc8.png',
+  'images/accessories/acc9.png',
 ];
 
 function getRandomItem(array) {
