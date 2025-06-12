@@ -11,11 +11,31 @@ const tops = [
   'images/tops/top10.png',
   'images/tops/top11.png',
   'images/tops/top12.png',
+  'images/tops/top13.png',
+  'images/tops/top14.png',
+  'images/tops/top15.png',
+  'images/tops/top16.png',
+  'images/tops/top17.png',
+  'images/tops/top18.png',
+  'images/tops/top19.png',
+  'images/tops/top20.png',
+  'images/tops/top21.png',
+  'images/tops/top22.png',
+  'images/tops/top23.png',
+  'images/tops/top24.png',
+  'images/tops/top25.png',
+  'images/tops/top26.png',
+  'images/tops/top27.png',
 ];
 
 const bottoms = [
   'images/bottoms/bottom1.png',
   'images/bottoms/bottom2.png',
+  'images/bottoms/bottom3.png',
+  'images/bottoms/bottom4.png',
+  'images/bottoms/bottom5.png',
+  'images/bottoms/bottom6.png',
+  'images/bottoms/bottom7.png',
 ];
 
 const shoes = [
